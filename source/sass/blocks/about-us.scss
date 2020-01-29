@@ -80,6 +80,10 @@
   text-align: center;
   color: $darker-main-color;
 
+  &--first {
+    margin-bottom: 10px;
+  }
+
   &--big {
     display: inline-block;
     min-height: 0;
