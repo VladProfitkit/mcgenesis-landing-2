@@ -9,7 +9,7 @@
     top: 480px;
     left: calc(50% - 430px);
     width: 1px;
-    height: 800px;
+    height: 400px;
     background-color: $main-color;
     z-index: 1;
   }
@@ -42,6 +42,10 @@
   color: $main-color;
   font-size: 64.74px;
   line-height: 86.31px;
+}
+
+.what-to-do__notice-big span {
+  vertical-align: sub;
 }
 
 .what-to-do__notice-small {
@@ -132,6 +136,10 @@
 
 .what-to-do__block-list {
   @include list-reset;
+
+  &--noblock {
+    margin-bottom: 50px;
+  }
 }
 
 .what-to-do__list-item {
@@ -191,7 +199,7 @@
 @media (min-width: $tablet-width) {
   .what-to-do {
     &::before {
-      top: 565px;
+      top: 690px;
       left: calc(50% - 317px);
       display: block;
     }
@@ -246,6 +254,11 @@
 
   .what-to-do__block-list {
     max-width: 610px;
+
+    &--noblock {
+      margin: 0 auto 50px;
+      max-width: 400px;
+    }
   }
 
   .what-to-do__block-heading {
@@ -270,7 +283,7 @@
 @media (min-width: $desktop-width) {
   .what-to-do {
     &::before {
-      top: 480px;
+      top: 680px;
       left: calc(50% - 430px);
     }
   }
@@ -302,6 +315,10 @@
         left: -65px;
       }
     }
+  }
+
+  .what-to-do__block-description {
+    max-width: 800px;
   }
 
   .what-to-do__detailed-heading {

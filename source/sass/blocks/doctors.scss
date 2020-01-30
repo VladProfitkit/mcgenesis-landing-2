@@ -56,7 +56,7 @@
 }
 
 .doctors__doc-photo {
-  margin-right: 25px;
+  // margin-right: 25px;
 }
 
 .doctors__doc-info {
@@ -92,6 +92,10 @@
 
   .doctors__doc {
     flex-direction: row;
+  }
+  
+  .doctors__doc-photo {
+    margin-right: 25px;
   }
 
   .doctors__doc-info {
